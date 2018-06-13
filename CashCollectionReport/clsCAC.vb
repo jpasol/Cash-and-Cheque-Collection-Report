@@ -10,7 +10,7 @@ Public Class clsCAC
         "Data Source=SBITCBILLING;" & _
         "integrated security=sspi"
 
-    Public Function GetTurnOver(ByVal xID) As DataRow
+    Public Function GetTurnOver(ByVal xID As Object) As DataRow
         Dim dtab As DataTable
         dtab = dsTurnOverSlip.Tables(0)
         Try
@@ -21,7 +21,7 @@ Public Class clsCAC
         End Try
     End Function
 
-    Public Sub RetrieveCAC(ByVal strSQL)
+    Public Sub RetrieveCAC(ByVal strSQL As Object)
         Dim SQLConn As New SqlConnection(ConnStr)
         Dim SQLAdapter As New SqlDataAdapter
         Try
@@ -35,7 +35,7 @@ Public Class clsCAC
         End Try
     End Sub
 
-    Public Sub RetrieveTurnOverSlip(ByVal strSQL)
+    Public Sub RetrieveTurnOverSlip(ByVal strSQL As Object)
         Dim SQLConn As New SqlConnection(ConnStr)
         Dim SQLAdapter As New SqlDataAdapter
         Try
@@ -49,7 +49,7 @@ Public Class clsCAC
         End Try
     End Sub
 
-    Public Function GetBatch(ByVal strSQL) As String
+    Public Function GetBatch(ByVal strSQL As Object) As String
         Dim SQLConn As New SqlConnection(ConnStr)
         Dim SQLComm As SqlCommand
         Try
@@ -68,7 +68,7 @@ Public Class clsCAC
         End Try
     End Function
 
-    Public Function SaveCAC(ByVal strSQL) As Boolean
+    Public Function SaveCAC(ByVal strSQL As Object) As Boolean
         Dim SQLConn As New SqlConnection(ConnStr)
         Dim SQLComm As SqlCommand
         Try
@@ -93,7 +93,7 @@ Public Class clsCAC
         End Try
     End Function
 
-    Public Function NumVal(ByVal xValue) As Boolean
+    Public Function NumVal(ByVal xValue As Object) As Boolean
         If IsNumeric(xValue) = True Then
             Return True
         Else
@@ -101,7 +101,7 @@ Public Class clsCAC
         End If
     End Function
 
-    Public Function StrVal(ByVal xValue) As Boolean
+    Public Function StrVal(ByVal xValue As Object) As Boolean
         If xValue = "" Then
             Return False
         Else
@@ -109,7 +109,7 @@ Public Class clsCAC
         End If
     End Function
 
-    Public Function TimeVal(ByVal xTimeFrom, ByVal xTimeTo) As Boolean
+    Public Function TimeVal(ByVal xTimeFrom As Object, ByVal xTimeTo As Object) As Boolean
         Try
             If TimeValue(xTimeFrom) < TimeValue(xTimeTo) Then
                 Return True
@@ -121,7 +121,7 @@ Public Class clsCAC
         End Try
     End Function
 
-    Public Function getToString(ByRef strValue) As String
+    Public Function getToString(ByRef strValue As Object) As String
         If strValue.Trim = "" Then
             Return "NULL"
         Else
@@ -129,7 +129,7 @@ Public Class clsCAC
         End If
     End Function
 
-    Function isNull(ByRef xValue) As String
+    Function isNull(ByRef xValue As Object) As String
         If IsDBNull(xValue) Then
             Return ""
         Else

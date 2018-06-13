@@ -1,0 +1,45 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CashCollectionReport
+</name>
+</assembly>
+<members>
+<member name="T:CashCollectionReport.dtasetCAC">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CashCollectionReport.dtasetCAC.CASHDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CashCollectionReport.dtasetCAC.CHEQUEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CashCollectionReport.dtasetCAC.CASHRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CashCollectionReport.dtasetCAC.CHEQUERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CashCollectionReport.dtasetCAC.CASHRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CashCollectionReport.dtasetCAC.CHEQUERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+</members>
+</doc>
