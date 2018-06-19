@@ -261,6 +261,8 @@ Public Class frmCAC
         '
         'txtComp
         '
+        Me.txtComp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.txtComp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         resources.ApplyResources(Me.txtComp, "txtComp")
         Me.txtComp.Items.AddRange(New Object() {resources.GetString("txtComp.Items"), resources.GetString("txtComp.Items1"), resources.GetString("txtComp.Items2")})
         Me.txtComp.Name = "txtComp"
@@ -298,6 +300,8 @@ Public Class frmCAC
         '
         'cmbTransType
         '
+        Me.cmbTransType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
+        Me.cmbTransType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         resources.ApplyResources(Me.cmbTransType, "cmbTransType")
         Me.cmbTransType.Items.AddRange(New Object() {resources.GetString("cmbTransType.Items"), resources.GetString("cmbTransType.Items1"), resources.GetString("cmbTransType.Items2"), resources.GetString("cmbTransType.Items3"), resources.GetString("cmbTransType.Items4")})
         Me.cmbTransType.Name = "cmbTransType"
@@ -1004,6 +1008,7 @@ Public Class frmCAC
         Me.Controls.Add(Me.gbCash)
         Me.Controls.Add(Me.gbCriteria)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmCAC"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.gbCriteria.ResumeLayout(False)
@@ -1582,71 +1587,73 @@ Public Class frmCAC
 
                 CallClsCAC.RetrieveCAC(strSQL)
                 PopulatedgChequeALL("Invoice")
-
+                PopulatedgChequeALL2()
                 If dtabDetails.Rows.Count = 0 Then
                     ' ClearForm()
                     MsgBox("No Cheque Records Found", MsgBoxStyle.Information)
-                Else
-                    PopulatedgChequeALL2()
+                    '    '    
+                    '    'Else
+                    '    '    PopulatedgChequeALL2()
                 End If
-
             Case "Import"
-                strSQL = "SELECT cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2," &
-                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5 FROM CYMPay inner join CYMGps on cympay.refnum = cymgps.refnum WHERE cympay.status <> 'CAN' AND UPPER(cympay.userid) = " &
+                strSQL = "SELECT distinct cympay.refnum,cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2," &
+                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5 FROM CYMPay inner join CYMGps on cympay.refnum = cymgps.refnum WHERE cymgps.status <> 'CAN' AND UPPER(cympay.userid) = " &
                          UCase(CallClsCAC.getToString(txtTellerID.Text)) & " AND sysdttm  >= CAST('" & CType(FormatDateTime(dteFrom, DateFormat.GeneralDate), String) &
                          "' AS SMALLDATETIME) AND sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)" &
                          selCompanyCode(txtComp.Text)
                 CallClsCAC.RetrieveCAC(strSQL)
+                PopulatedgChequeMXS()
                 If dsCAC.Tables(0).Rows.Count > 0 Then
-                    PopulatedgChequeMXS()
-                    DisabledgbCriteria()
-                Else
-                    ClearForm()
+                    '    PopulatedgChequeMXS()
+                    '    DisabledgbCriteria()
+                    'Else
+                    '    ClearForm()
                     MsgBox("No Records Found", MsgBoxStyle.Information)
                 End If
             Case "Export"
-                strSQL = "SELECT cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2," &
-                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5 FROM CCRpay inner join ccrcyx on ccrpay.refnum = ccrcyx.refnum WHERE ccrtyp = '1' AND CCRpay.status <> 'CAN' AND UPPER(CCRpay.userid) = " &
+                strSQL = "SELECT distinct ccrpay.refnum,cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2," &
+                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5 FROM CCRpay inner join ccrcyx on ccrpay.refnum = ccrcyx.refnum WHERE ccrtyp = '1' AND ccrcyx.status <> 'CAN' AND UPPER(CCRpay.userid) = " &
                          UCase(CallClsCAC.getToString(txtTellerID.Text)) & " AND CCRpay.sysdttm  >= CAST('" & CType(FormatDateTime(dteFrom, DateFormat.GeneralDate), String) &
                          "' AS SMALLDATETIME) AND CCRpay.sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)" &
                          selCompanyCode(txtComp.Text)
                 CallClsCAC.RetrieveCAC(strSQL)
+                PopulatedgChequeMXS()
                 If dsCAC.Tables(0).Rows.Count > 0 Then
-                    PopulatedgChequeMXS()
-                    DisabledgbCriteria()
-                Else
-                    ClearForm()
+                    '    PopulatedgChequeMXS()
+                    '    DisabledgbCriteria()
+                    'Else
+                    '    ClearForm()
                     MsgBox("No Records Found", MsgBoxStyle.Information)
                 End If
             Case "Special Services"
-                strSQL = "SELECT cusnam, cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2," &
+                strSQL = "SELECT distinct pay.refnum, cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2," &
                          "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5 FROM CCRpay AS PAY INNER JOIN CCRdtl AS DTL ON PAY.refnum = DTL.refnum " &
-                         "WHERE DTL.guarntycde <> 'Y' AND PAY.ccrtyp = '2' AND PAY.status <> 'CAN' AND UPPER(PAY.userid) = " &
+                         "WHERE DTL.guarntycde <> 'Y' AND PAY.ccrtyp = '2' AND dtl.status <> 'CAN' AND UPPER(PAY.userid) = " &
                          UCase(CallClsCAC.getToString(txtTellerID.Text)) & " AND PAY.sysdttm  >= CAST('" & CType(FormatDateTime(dteFrom, DateFormat.GeneralDate), String) &
                          "' AS SMALLDATETIME) AND PAY.sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME) " &
-                         selCompanyCode(txtComp.Text) &
-                         "GROUP BY pay.refnum, cusnam, cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2,chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5"
+                         selCompanyCode(txtComp.Text)
                 CallClsCAC.RetrieveCAC(strSQL)
+                PopulatedgChequeMXS()
                 If dsCAC.Tables(0).Rows.Count > 0 Then
-                    PopulatedgChequeMXS()
-                    DisabledgbCriteria()
-                Else
-                    ClearForm()
+                    '    PopulatedgChequeMXS()
+                    '    DisabledgbCriteria()
+                    'Else
+                    '    ClearForm()
                     MsgBox("No Records Found", MsgBoxStyle.Information)
                 End If
             Case "Invoice"
-                strSQL = "SELECT CashAMT,AvailAMT,CheckAmt1,CheckAmt2,CheckBnk1,CheckBnk2,CheckNo1,CheckNo2" &
+                strSQL = "SELECT distinct PAY.ORNUM,CashAMT,AvailAMT,CheckAmt1,CheckAmt2,CheckBnk1,CheckBnk2,CheckNo1,CheckNo2" &
                          " FROM INVPAYHDR as INV inner join INVPAYDTL as PAY on INV.ORNUM = PAY.ORNUM inner join INVICT as ICT on PAY.INVNUM = ICT.INVNUM WHERE ICT.status <>'CAN'" &
                          " AND UPPER(INV.userid) = " & UCase(CallClsCAC.getToString(txtTellerID.Text)) & " AND ORDate  >= CAST('" & CType(FormatDateTime(dteFrom, DateFormat.GeneralDate), String) &
                          "' AS SMALLDATETIME) AND ORDate  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)" &
-                         selCompanyCode(txtComp.Text) &
-                         " GROUP BY CashAMT,AvailAMT,CheckAmt1,CheckAmt2,CheckBnk1,CheckBnk2,CheckNo1,CheckNo2"
+                         selCompanyCode(txtComp.Text)
                 CallClsCAC.RetrieveCAC(strSQL)
+                PopulatedgChequeINV()
                 If dsCAC.Tables(0).Rows.Count > 0 Then
-                    PopulatedgChequeINV()
-                    DisabledgbCriteria()
-                Else
-                    ClearForm()
+                    '    PopulatedgChequeINV()
+                    '    DisabledgbCriteria()
+                    'Else
+                    '    ClearForm()
                     MsgBox("No Records Found", MsgBoxStyle.Information)
                 End If
         End Select
@@ -2984,6 +2991,7 @@ Public Class frmCAC
     Private Sub frmCAC_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         frmSplash.Close()
     End Sub
+
 
 
 #End Region

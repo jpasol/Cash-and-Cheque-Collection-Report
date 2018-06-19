@@ -1,4 +1,6 @@
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CashCollectionReport.exe.config
+C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CashCollectionReport.exe.manifest
+C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CashCollectionReport.application
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CashCollectionReport.exe
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CashCollectionReport.xml
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\af\CashCollectionReport.resources.dll
@@ -28,10 +30,8 @@ C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collectio
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Release\CashCollectionReport.vbproj.GenerateResource.cache
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Release\CashCollectionReport.vbproj.CoreCompileInputs.cache
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Release\af\CashCollectionReport.resources.dll
+C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Release\CashCollectionReport.exe.manifest
+C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Release\CashCollectionReport.application
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Release\CashCollectionReport.vbproj.CopyComplete
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Release\CashCollectionReport.exe
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Release\CashCollectionReport.xml
-C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Release\CashCollectionReport.vbprojAssemblyReference.cache
-C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\crdb_adoplus.dll
-C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\System.Web.Services.dll
-C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\EnvDTE.dll

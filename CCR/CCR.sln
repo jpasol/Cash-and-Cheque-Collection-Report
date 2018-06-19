@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CCR", "CCR.vdproj", "{7D8E4452-FF8B-4339-B9A7-612F9D8CE755}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D8E4452-FF8B-4339-B9A7-612F9D8CE755}.Debug|Default.ActiveCfg = Debug
+		{7D8E4452-FF8B-4339-B9A7-612F9D8CE755}.Debug|Default.Build.0 = Debug
+		{7D8E4452-FF8B-4339-B9A7-612F9D8CE755}.Release|Default.ActiveCfg = Release
+		{7D8E4452-FF8B-4339-B9A7-612F9D8CE755}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75061424-D71D-46A6-A79F-EFC353B99A64}
+	EndGlobalSection
+EndGlobal
