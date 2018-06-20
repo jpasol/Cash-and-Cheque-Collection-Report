@@ -3,15 +3,18 @@
   <assemblyIdentity name="CashCollectionReport.application" version="1.1.1.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <description asmv2:publisher="CashCollectionReport" asmv2:product="CashCollectionReport" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
+  </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="CashCollectionReport.exe.manifest" size="20894">
+    <dependentAssembly dependencyType="install" codebase="CashCollectionReport.exe.manifest" size="20984">
       <assemblyIdentity name="CashCollectionReport.exe" version="1.1.1.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Ds0ypUCimcBNTrAAeSIfv2ZS30Q=</dsig:DigestValue>
+        <dsig:DigestValue>hsN1Hn5GK+n/6buaGvbYnBndkuc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -37,3 +37,7 @@ C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collectio
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CashCollectionReport.application
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Debug\CashCollectionReport.exe.manifest
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Debug\CashCollectionReport.application
+C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\crdb_adoplus.dll
+C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\System.Web.Services.dll
+C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\EnvDTE.dll
+C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Debug\CashCollectionReport.vbprojAssemblyReference.cache

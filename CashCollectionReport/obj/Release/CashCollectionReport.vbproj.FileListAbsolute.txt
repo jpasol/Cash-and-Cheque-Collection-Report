@@ -4,10 +4,13 @@ C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collectio
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CashCollectionReport.exe
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CashCollectionReport.xml
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\af\CashCollectionReport.resources.dll
+C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\crdb_adoplus.dll
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CrystalDecisions.ReportSource.dll
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CrystalDecisions.Shared.dll
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CrystalDecisions.Windows.Forms.dll
+C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\System.Web.Services.dll
+C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\EnvDTE.dll
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
