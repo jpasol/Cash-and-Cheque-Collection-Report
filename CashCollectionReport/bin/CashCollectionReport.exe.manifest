@@ -4,7 +4,7 @@
   <description asmv2:iconFile="paper2.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="CashCollectionReport" version="1.0.6745.17020" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="CashCollectionReport" version="1.0.6745.30090" language="neutral" processorArchitecture="x86" />
     <commandLine file="CashCollectionReport.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -48,26 +48,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CashCollectionReport.exe" size="572808">
-      <assemblyIdentity name="CashCollectionReport" version="1.0.6745.17020" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CashCollectionReport.exe" size="589192">
+      <assemblyIdentity name="CashCollectionReport" version="1.0.6745.30090" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>DqYjQ7spxJPijO+wRSzk82avRbI=</dsig:DigestValue>
+        <dsig:DigestValue>HzoFpfrEPk4lyyFYu3KIZEjHyf0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="af\CashCollectionReport.resources.dll" size="9216">
-      <assemblyIdentity name="CashCollectionReport.resources" version="1.0.6745.17020" language="af" processorArchitecture="x86" />
+      <assemblyIdentity name="CashCollectionReport.resources" version="1.0.6745.30090" language="af" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>RPHy0UEJ8AmnvwYqLJMxtbfGqTw=</dsig:DigestValue>
+        <dsig:DigestValue>M4oYBEnTIuKLKhDA4HwoufiC16c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

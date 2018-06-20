@@ -40,21 +40,22 @@ Public Class frmRptCAC
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(frmRptCAC))
-        Me.statCACBar = New System.Windows.Forms.StatusBar
-        Me.statPanelUser = New System.Windows.Forms.StatusBarPanel
-        Me.statPanelDate = New System.Windows.Forms.StatusBarPanel
-        Me.statPanelTime = New System.Windows.Forms.StatusBarPanel
-        Me.gbHeader = New System.Windows.Forms.GroupBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.btnCLOSE = New System.Windows.Forms.Button
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.crvReports = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRptCAC))
+        Me.statCACBar = New System.Windows.Forms.StatusBar()
+        Me.statPanelUser = New System.Windows.Forms.StatusBarPanel()
+        Me.statPanelDate = New System.Windows.Forms.StatusBarPanel()
+        Me.statPanelTime = New System.Windows.Forms.StatusBarPanel()
+        Me.gbHeader = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnCLOSE = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.crvReports = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         CType(Me.statPanelUser, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.statPanelDate, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.statPanelTime, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbHeader.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -71,16 +72,19 @@ Public Class frmRptCAC
         '
         'statPanelUser
         '
+        Me.statPanelUser.Name = "statPanelUser"
         Me.statPanelUser.Width = 550
         '
         'statPanelDate
         '
         Me.statPanelDate.Alignment = System.Windows.Forms.HorizontalAlignment.Right
+        Me.statPanelDate.Name = "statPanelDate"
         Me.statPanelDate.Width = 250
         '
         'statPanelTime
         '
         Me.statPanelTime.Alignment = System.Windows.Forms.HorizontalAlignment.Right
+        Me.statPanelTime.Name = "statPanelTime"
         Me.statPanelTime.Width = 120
         '
         'gbHeader
@@ -124,8 +128,8 @@ Public Class frmRptCAC
         Me.btnCLOSE.Name = "btnCLOSE"
         Me.btnCLOSE.Size = New System.Drawing.Size(75, 73)
         Me.btnCLOSE.TabIndex = 6
-        Me.btnCLOSE.Text = "CLOSE                                                                            " & _
-        ""
+        Me.btnCLOSE.Text = "CLOSE                                                                            " &
+    ""
         Me.btnCLOSE.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
         'GroupBox1
@@ -140,12 +144,13 @@ Public Class frmRptCAC
         'crvReports
         '
         Me.crvReports.ActiveViewIndex = -1
-        Me.crvReports.DisplayGroupTree = False
+        Me.crvReports.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.crvReports.Cursor = System.Windows.Forms.Cursors.Default
         Me.crvReports.Location = New System.Drawing.Point(8, 16)
         Me.crvReports.Name = "crvReports"
-        Me.crvReports.ReportSource = Nothing
         Me.crvReports.Size = New System.Drawing.Size(888, 584)
         Me.crvReports.TabIndex = 1
+        Me.crvReports.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'frmRptCAC
         '
@@ -163,6 +168,7 @@ Public Class frmRptCAC
         CType(Me.statPanelDate, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.statPanelTime, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbHeader.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
