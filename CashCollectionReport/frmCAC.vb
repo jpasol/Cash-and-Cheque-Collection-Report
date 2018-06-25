@@ -125,6 +125,14 @@ Public Class frmCAC
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label12 As Label
     Friend WithEvents txtComp As ComboBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCAC))
@@ -223,6 +231,14 @@ Public Class frmCAC
         Me.gbHeader = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.gbCriteria.SuspendLayout()
         Me.gbCash.SuspendLayout()
         Me.gbCheque.SuspendLayout()
@@ -234,6 +250,10 @@ Public Class frmCAC
         CType(Me.statPanelTime, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbHeader.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbCriteria
@@ -375,6 +395,8 @@ Public Class frmCAC
         '
         'gbCash
         '
+        Me.gbCash.Controls.Add(Me.GroupBox2)
+        Me.gbCash.Controls.Add(Me.GroupBox1)
         Me.gbCash.Controls.Add(Me.Label35)
         Me.gbCash.Controls.Add(Me.Label34)
         Me.gbCash.Controls.Add(Me.txt001)
@@ -778,6 +800,8 @@ Public Class frmCAC
         '
         'gbCheque
         '
+        Me.gbCheque.Controls.Add(Me.GroupBox3)
+        Me.gbCheque.Controls.Add(Me.GroupBox4)
         Me.gbCheque.Controls.Add(Me.txtExcessCheque)
         Me.gbCheque.Controls.Add(Me.Label9)
         Me.gbCheque.Controls.Add(Me.txtTotCheque)
@@ -996,6 +1020,58 @@ Public Class frmCAC
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.TabStop = False
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Info
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.TabStop = False
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Info
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.TabStop = False
+        '
+        'TextBox2
+        '
+        resources.ApplyResources(Me.TextBox2, "TextBox2")
+        Me.TextBox2.Name = "TextBox2"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.TextBox4)
+        resources.ApplyResources(Me.GroupBox3, "GroupBox3")
+        Me.GroupBox3.ForeColor = System.Drawing.SystemColors.Info
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.TabStop = False
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.TextBox3)
+        resources.ApplyResources(Me.GroupBox4, "GroupBox4")
+        Me.GroupBox4.ForeColor = System.Drawing.SystemColors.Info
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.TabStop = False
+        '
+        'TextBox1
+        '
+        resources.ApplyResources(Me.TextBox1, "TextBox1")
+        Me.TextBox1.Name = "TextBox1"
+        '
+        'TextBox3
+        '
+        resources.ApplyResources(Me.TextBox3, "TextBox3")
+        Me.TextBox3.Name = "TextBox3"
+        '
+        'TextBox4
+        '
+        resources.ApplyResources(Me.TextBox4, "TextBox4")
+        Me.TextBox4.Name = "TextBox4"
+        '
         'frmCAC
         '
         Me.BackColor = System.Drawing.Color.LightSlateGray
@@ -1026,6 +1102,14 @@ Public Class frmCAC
         CType(Me.statPanelTime, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbHeader.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
