@@ -123,22 +123,18 @@ Public Class frmCAC
     Friend WithEvents lblID As System.Windows.Forms.Label
     Friend WithEvents gbHeader As System.Windows.Forms.GroupBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents txtComp As ComboBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtCshISI As TextBox
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtCshSBITC As TextBox
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtChkISI As TextBox
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtChkSBITC As TextBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCAC))
         Me.gbCriteria = New System.Windows.Forms.GroupBox()
-        Me.txtComp = New System.Windows.Forms.ComboBox()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.lstTimeRange = New System.Windows.Forms.ListBox()
         Me.lblBatch = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
@@ -155,6 +151,10 @@ Public Class frmCAC
         Me.Label13 = New System.Windows.Forms.Label()
         Me.lblTimeRange = New System.Windows.Forms.Label()
         Me.gbCash = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txtCshISI = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtCshSBITC = New System.Windows.Forms.TextBox()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.txt001 = New System.Windows.Forms.TextBox()
@@ -205,6 +205,10 @@ Public Class frmCAC
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.gbCheque = New System.Windows.Forms.GroupBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.txtChkISI = New System.Windows.Forms.TextBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.txtChkSBITC = New System.Windows.Forms.TextBox()
         Me.txtExcessCheque = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtTotCheque = New System.Windows.Forms.TextBox()
@@ -231,17 +235,13 @@ Public Class frmCAC
         Me.gbHeader = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.gbCriteria.SuspendLayout()
         Me.gbCash.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.gbCheque.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         CType(Me.dgChequeStat, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgChequeDetails, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbControl.SuspendLayout()
@@ -250,16 +250,10 @@ Public Class frmCAC
         CType(Me.statPanelTime, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbHeader.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbCriteria
         '
-        Me.gbCriteria.Controls.Add(Me.txtComp)
-        Me.gbCriteria.Controls.Add(Me.Label12)
         Me.gbCriteria.Controls.Add(Me.lstTimeRange)
         Me.gbCriteria.Controls.Add(Me.lblBatch)
         Me.gbCriteria.Controls.Add(Me.Label19)
@@ -278,21 +272,6 @@ Public Class frmCAC
         resources.ApplyResources(Me.gbCriteria, "gbCriteria")
         Me.gbCriteria.Name = "gbCriteria"
         Me.gbCriteria.TabStop = False
-        '
-        'txtComp
-        '
-        Me.txtComp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.txtComp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        resources.ApplyResources(Me.txtComp, "txtComp")
-        Me.txtComp.Items.AddRange(New Object() {resources.GetString("txtComp.Items"), resources.GetString("txtComp.Items1"), resources.GetString("txtComp.Items2")})
-        Me.txtComp.Name = "txtComp"
-        Me.txtComp.TabStop = False
-        '
-        'Label12
-        '
-        resources.ApplyResources(Me.Label12, "Label12")
-        Me.Label12.ForeColor = System.Drawing.SystemColors.Info
-        Me.Label12.Name = "Label12"
         '
         'lstTimeRange
         '
@@ -449,6 +428,34 @@ Public Class frmCAC
         resources.ApplyResources(Me.gbCash, "gbCash")
         Me.gbCash.Name = "gbCash"
         Me.gbCash.TabStop = False
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.txtCshISI)
+        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Info
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.TabStop = False
+        '
+        'txtCshISI
+        '
+        resources.ApplyResources(Me.txtCshISI, "txtCshISI")
+        Me.txtCshISI.Name = "txtCshISI"
+        Me.txtCshISI.ReadOnly = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.txtCshSBITC)
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Info
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.TabStop = False
+        '
+        'txtCshSBITC
+        '
+        resources.ApplyResources(Me.txtCshSBITC, "txtCshSBITC")
+        Me.txtCshSBITC.Name = "txtCshSBITC"
+        Me.txtCshSBITC.ReadOnly = True
         '
         'Label35
         '
@@ -815,6 +822,34 @@ Public Class frmCAC
         Me.gbCheque.Name = "gbCheque"
         Me.gbCheque.TabStop = False
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.txtChkISI)
+        resources.ApplyResources(Me.GroupBox3, "GroupBox3")
+        Me.GroupBox3.ForeColor = System.Drawing.SystemColors.Info
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.TabStop = False
+        '
+        'txtChkISI
+        '
+        resources.ApplyResources(Me.txtChkISI, "txtChkISI")
+        Me.txtChkISI.Name = "txtChkISI"
+        Me.txtChkISI.ReadOnly = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.txtChkSBITC)
+        resources.ApplyResources(Me.GroupBox4, "GroupBox4")
+        Me.GroupBox4.ForeColor = System.Drawing.SystemColors.Info
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.TabStop = False
+        '
+        'txtChkSBITC
+        '
+        resources.ApplyResources(Me.txtChkSBITC, "txtChkSBITC")
+        Me.txtChkSBITC.Name = "txtChkSBITC"
+        Me.txtChkSBITC.ReadOnly = True
+        '
         'txtExcessCheque
         '
         Me.txtExcessCheque.BackColor = System.Drawing.Color.LightSteelBlue
@@ -1020,58 +1055,6 @@ Public Class frmCAC
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.TabStop = False
         '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
-        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Info
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.TabStop = False
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
-        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
-        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Info
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.TabStop = False
-        '
-        'TextBox2
-        '
-        resources.ApplyResources(Me.TextBox2, "TextBox2")
-        Me.TextBox2.Name = "TextBox2"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.TextBox4)
-        resources.ApplyResources(Me.GroupBox3, "GroupBox3")
-        Me.GroupBox3.ForeColor = System.Drawing.SystemColors.Info
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.TabStop = False
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.TextBox3)
-        resources.ApplyResources(Me.GroupBox4, "GroupBox4")
-        Me.GroupBox4.ForeColor = System.Drawing.SystemColors.Info
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.TabStop = False
-        '
-        'TextBox1
-        '
-        resources.ApplyResources(Me.TextBox1, "TextBox1")
-        Me.TextBox1.Name = "TextBox1"
-        '
-        'TextBox3
-        '
-        resources.ApplyResources(Me.TextBox3, "TextBox3")
-        Me.TextBox3.Name = "TextBox3"
-        '
-        'TextBox4
-        '
-        resources.ApplyResources(Me.TextBox4, "TextBox4")
-        Me.TextBox4.Name = "TextBox4"
-        '
         'frmCAC
         '
         Me.BackColor = System.Drawing.Color.LightSlateGray
@@ -1091,8 +1074,16 @@ Public Class frmCAC
         Me.gbCriteria.PerformLayout()
         Me.gbCash.ResumeLayout(False)
         Me.gbCash.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.gbCheque.ResumeLayout(False)
         Me.gbCheque.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         CType(Me.dgChequeStat, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgChequeDetails, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbControl.ResumeLayout(False)
@@ -1102,14 +1093,6 @@ Public Class frmCAC
         CType(Me.statPanelTime, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbHeader.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1122,8 +1105,14 @@ Public Class frmCAC
     Private ts As DataGridTableStyle
     Private decGrCshAmt As Decimal = 0
     Private decGrChgAmt As Decimal = 0
+    Private decGrCshAmtISI As Decimal = 0
+    Private decGrChgAmtISI As Decimal = 0
+    Private decGrCshAmtSBITC As Decimal = 0
+    Private decGrChgAmtSBITC As Decimal = 0
     Private decExCheque As Decimal = 0
     Private decAmCheque As Decimal = 0
+    Private decAmChequeISI As Decimal = 0
+    Private decAmChequeSBITC As Decimal = 0
     Private decGrandTotal As Decimal = 0
 
 
@@ -1131,7 +1120,6 @@ Public Class frmCAC
         SetStatusBar()
         txtTellerID.Text = zCurrentUser()
         cmbTransType.SelectedItem = "All Transaction"
-        txtComp.SelectedItem = "ALL"
         cmbTransType.Focus()
     End Sub
 
@@ -1419,7 +1407,7 @@ Public Class frmCAC
                 MsgBox("Invalid Teller ID", MsgBoxStyle.Critical)
                 txtTellerID.Focus()
             Else
-                txtComp.Focus()
+                dtePeriod.Focus()
             End If
         End If
     End Sub
@@ -1492,8 +1480,6 @@ Public Class frmCAC
                 cmbTransType.BackColor = Color.AliceBlue
                 txtTellerID.ReadOnly = True
                 txtTellerID.BackColor = Color.AliceBlue
-                txtComp.Enabled = False
-                txtComp.BackColor = Color.AliceBlue
                 dtePeriod.Enabled = False
                 dtePeriod.BackColor = Color.AliceBlue
                 PopulateFields()
@@ -1639,36 +1625,31 @@ Public Class frmCAC
         Select Case cmbTransType.SelectedItem
             Case "All Transaction"
                 strSQL = "SELECT distinct cympay.refnum,cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2," &
-                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5 FROM CYMPay inner join CYMGps on cympay.refnum = cymgps.refnum WHERE cymgps.status <> 'CAN' AND UPPER(cympay.userid) = " &
+                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5,CompanyCode FROM CYMPay inner join CYMGps on cympay.refnum = cymgps.refnum WHERE cymgps.status <> 'CAN' AND UPPER(cympay.userid) = " &
                          UCase(CallClsCAC.getToString(txtTellerID.Text)) & " AND sysdttm  >= CAST('" & CType(FormatDateTime(dteFrom, DateFormat.GeneralDate), String) &
-                         "' AS SMALLDATETIME) AND sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)" &
-                         selCompanyCode(txtComp.Text)
+                         "' AS SMALLDATETIME) AND sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)"
                 CallClsCAC.RetrieveCAC(strSQL)
                 PopulatedgChequeALL("Import")
 
                 strSQL = "SELECT distinct ccrpay.refnum,cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2," &
-                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5 FROM CCRpay inner join ccrcyx on ccrpay.refnum = ccrcyx.refnum WHERE ccrtyp = '1' AND ccrcyx.status <> 'CAN' AND UPPER(CCRpay.userid) = " &
+                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5,CompanyCode FROM CCRpay inner join ccrcyx on ccrpay.refnum = ccrcyx.refnum WHERE ccrtyp = '1' AND ccrcyx.status <> 'CAN' AND UPPER(CCRpay.userid) = " &
                          UCase(CallClsCAC.getToString(txtTellerID.Text)) & " AND CCRpay.sysdttm  >= CAST('" & CType(FormatDateTime(dteFrom, DateFormat.GeneralDate), String) &
-                         "' AS SMALLDATETIME) AND CCRpay.sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)" &
-                         selCompanyCode(txtComp.Text)
+                         "' AS SMALLDATETIME) AND CCRpay.sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)"
                 CallClsCAC.RetrieveCAC(strSQL)
                 PopulatedgChequeALL("Export")
 
                 strSQL = "SELECT distinct pay.refnum, cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2," &
-                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5 FROM CCRpay AS PAY INNER JOIN CCRdtl AS DTL ON PAY.refnum = DTL.refnum " &
+                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5,CompanyCode FROM CCRpay AS PAY INNER JOIN CCRdtl AS DTL ON PAY.refnum = DTL.refnum " &
                          "WHERE DTL.guarntycde <> 'Y' AND PAY.ccrtyp = '2' AND dtl.status <> 'CAN' AND UPPER(PAY.userid) = " &
                          UCase(CallClsCAC.getToString(txtTellerID.Text)) & " AND PAY.sysdttm  >= CAST('" & CType(FormatDateTime(dteFrom, DateFormat.GeneralDate), String) &
-                         "' AS SMALLDATETIME) AND PAY.sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME) " &
-                         selCompanyCode(txtComp.Text)
+                         "' AS SMALLDATETIME) AND PAY.sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME) "
                 CallClsCAC.RetrieveCAC(strSQL)
                 PopulatedgChequeALL("Special Services")
 
-                strSQL = "SELECT distinct PAY.ORNUM,CashAMT,AvailAMT,CheckAmt1,CheckAmt2,CheckBnk1,CheckBnk2,CheckNo1,CheckNo2" &
+                strSQL = "SELECT distinct PAY.ORNUM,CashAMT,AvailAMT,CheckAmt1,CheckAmt2,CheckBnk1,CheckBnk2,CheckNo1,CheckNo2,CompanyCode" &
                          " FROM INVPAYHDR as INV inner join INVPAYDTL as PAY on INV.ORNUM = PAY.ORNUM inner join INVICT as ICT on PAY.INVNUM = ICT.INVNUM WHERE ICT.status <>'CAN'" &
                          " AND UPPER(INV.userid) = " & UCase(CallClsCAC.getToString(txtTellerID.Text)) & " AND ORDate  >= CAST('" & CType(FormatDateTime(dteFrom, DateFormat.GeneralDate), String) &
-                         "' AS SMALLDATETIME) AND ORDate  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)" &
-                         selCompanyCode(txtComp.Text)
-
+                         "' AS SMALLDATETIME) AND ORDate  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)"
                 CallClsCAC.RetrieveCAC(strSQL)
                 PopulatedgChequeALL("Invoice")
                 PopulatedgChequeALL2()
@@ -1681,13 +1662,12 @@ Public Class frmCAC
                 End If
             Case "Import"
                 strSQL = "SELECT distinct cympay.refnum,cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2," &
-                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5 FROM CYMPay inner join CYMGps on cympay.refnum = cymgps.refnum WHERE cymgps.status <> 'CAN' AND UPPER(cympay.userid) = " &
+                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5,CompanyCode FROM CYMPay inner join CYMGps on cympay.refnum = cymgps.refnum WHERE cymgps.status <> 'CAN' AND UPPER(cympay.userid) = " &
                          UCase(CallClsCAC.getToString(txtTellerID.Text)) & " AND sysdttm  >= CAST('" & CType(FormatDateTime(dteFrom, DateFormat.GeneralDate), String) &
-                         "' AS SMALLDATETIME) AND sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)" &
-                         selCompanyCode(txtComp.Text)
+                         "' AS SMALLDATETIME) AND sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)"
                 CallClsCAC.RetrieveCAC(strSQL)
                 PopulatedgChequeMXS()
-                If dsCAC.Tables(0).Rows.Count > 0 Then
+                If dsCAC.Tables(0).Rows.Count = 0 Then
                     '    PopulatedgChequeMXS()
                     '    DisabledgbCriteria()
                     'Else
@@ -1696,13 +1676,12 @@ Public Class frmCAC
                 End If
             Case "Export"
                 strSQL = "SELECT distinct ccrpay.refnum,cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2," &
-                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5 FROM CCRpay inner join ccrcyx on ccrpay.refnum = ccrcyx.refnum WHERE ccrtyp = '1' AND ccrcyx.status <> 'CAN' AND UPPER(CCRpay.userid) = " &
+                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5,CompanyCode FROM CCRpay inner join ccrcyx on ccrpay.refnum = ccrcyx.refnum WHERE ccrtyp = '1' AND ccrcyx.status <> 'CAN' AND UPPER(CCRpay.userid) = " &
                          UCase(CallClsCAC.getToString(txtTellerID.Text)) & " AND CCRpay.sysdttm  >= CAST('" & CType(FormatDateTime(dteFrom, DateFormat.GeneralDate), String) &
-                         "' AS SMALLDATETIME) AND CCRpay.sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)" &
-                         selCompanyCode(txtComp.Text)
+                         "' AS SMALLDATETIME) AND CCRpay.sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)"
                 CallClsCAC.RetrieveCAC(strSQL)
                 PopulatedgChequeMXS()
-                If dsCAC.Tables(0).Rows.Count > 0 Then
+                If dsCAC.Tables(0).Rows.Count = 0 Then
                     '    PopulatedgChequeMXS()
                     '    DisabledgbCriteria()
                     'Else
@@ -1711,14 +1690,13 @@ Public Class frmCAC
                 End If
             Case "Special Services"
                 strSQL = "SELECT distinct pay.refnum, cshamt,chgamt,chkbnk1,chkbnk2,chkbnk3,chkbnk4,chkbnk5,chkamt1,chkamt2," &
-                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5 FROM CCRpay AS PAY INNER JOIN CCRdtl AS DTL ON PAY.refnum = DTL.refnum " &
+                         "chkamt3,chkamt4,chkamt5,chkno1,chkno2,chkno3,chkno4,chkno5,CompanyCode FROM CCRpay AS PAY INNER JOIN CCRdtl AS DTL ON PAY.refnum = DTL.refnum " &
                          "WHERE DTL.guarntycde <> 'Y' AND PAY.ccrtyp = '2' AND dtl.status <> 'CAN' AND UPPER(PAY.userid) = " &
                          UCase(CallClsCAC.getToString(txtTellerID.Text)) & " AND PAY.sysdttm  >= CAST('" & CType(FormatDateTime(dteFrom, DateFormat.GeneralDate), String) &
-                         "' AS SMALLDATETIME) AND PAY.sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME) " &
-                         selCompanyCode(txtComp.Text)
+                         "' AS SMALLDATETIME) AND PAY.sysdttm  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME) "
                 CallClsCAC.RetrieveCAC(strSQL)
                 PopulatedgChequeMXS()
-                If dsCAC.Tables(0).Rows.Count > 0 Then
+                If dsCAC.Tables(0).Rows.Count = 0 Then
                     '    PopulatedgChequeMXS()
                     '    DisabledgbCriteria()
                     'Else
@@ -1726,14 +1704,13 @@ Public Class frmCAC
                     MsgBox("No Records Found", MsgBoxStyle.Information)
                 End If
             Case "Invoice"
-                strSQL = "SELECT distinct PAY.ORNUM,CashAMT,AvailAMT,CheckAmt1,CheckAmt2,CheckBnk1,CheckBnk2,CheckNo1,CheckNo2" &
+                strSQL = "SELECT distinct PAY.ORNUM,CashAMT,AvailAMT,CheckAmt1,CheckAmt2,CheckBnk1,CheckBnk2,CheckNo1,CheckNo2,CompanyCode" &
                          " FROM INVPAYHDR as INV inner join INVPAYDTL as PAY on INV.ORNUM = PAY.ORNUM inner join INVICT as ICT on PAY.INVNUM = ICT.INVNUM WHERE ICT.status <>'CAN'" &
                          " AND UPPER(INV.userid) = " & UCase(CallClsCAC.getToString(txtTellerID.Text)) & " AND ORDate  >= CAST('" & CType(FormatDateTime(dteFrom, DateFormat.GeneralDate), String) &
-                         "' AS SMALLDATETIME) AND ORDate  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)" &
-                         selCompanyCode(txtComp.Text)
+                         "' AS SMALLDATETIME) AND ORDate  <= CAST('" & CType(FormatDateTime(dteTo, DateFormat.GeneralDate), String) & "' AS SMALLDATETIME)"
                 CallClsCAC.RetrieveCAC(strSQL)
                 PopulatedgChequeINV()
-                If dsCAC.Tables(0).Rows.Count > 0 Then
+                If dsCAC.Tables(0).Rows.Count = 0 Then
                     '    PopulatedgChequeINV()
                     '    DisabledgbCriteria()
                     'Else
@@ -1776,11 +1753,26 @@ Public Class frmCAC
         decGrCshAmt = 0
         decGrChgAmt = 0
 
+        decGrCshAmtISI = 0
+        decGrChgAmtISI = 0
+        decGrCshAmtSBITC = 0
+        decGrChgAmtSBITC = 0
+        decAmChequeISI = 0
+        decAmChequeSBITC = 0
+
         If dtabdsCAC.Rows.Count > 0 Then
             Dim lngCtr As Long = 0
 
             Do While lngCtr < dtabdsCAC.Rows.Count
                 '------- Expected Grand Total (add the cash amount)
+                If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                    decGrCshAmtISI = decGrCshAmtISI + dtabdsCAC.Rows(lngCtr)("cshamt")
+                    decGrChgAmtISI = decGrChgAmtISI + dtabdsCAC.Rows(lngCtr)("chgamt")
+                ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                    decGrCshAmtSBITC = decGrCshAmtSBITC + dtabdsCAC.Rows(lngCtr)("cshamt")
+                    decGrChgAmtSBITC = decGrChgAmtSBITC + dtabdsCAC.Rows(lngCtr)("chgamt")
+                End If
+
                 decGrCshAmt = decGrCshAmt + dtabdsCAC.Rows(lngCtr)("cshamt")
                 decGrChgAmt = decGrChgAmt + dtabdsCAC.Rows(lngCtr)("chgamt")
 
@@ -1792,6 +1784,13 @@ Public Class frmCAC
                     dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno1")
                     dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt1")
                     decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt1")
+
+                    If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                        decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt1")
+                    ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                        decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt1")
+                    End If
+
                     If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 Then
                         dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                         decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -1808,6 +1807,13 @@ Public Class frmCAC
                     dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno2")
                     dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt2")
                     decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt2")
+
+                    If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                        decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt2")
+                    ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                        decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt2")
+                    End If
+
                     If dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                         dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                         decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -1824,6 +1830,13 @@ Public Class frmCAC
                     dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno3")
                     dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt3")
                     decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt3")
+
+                    If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                        decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt3")
+                    ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                        decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt3")
+                    End If
+
                     If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 And dtabdsCAC.Rows(lngCtr)("chkbnk2") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                         dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                         decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -1840,6 +1853,13 @@ Public Class frmCAC
                     dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno4")
                     dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt4")
                     decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt4")
+
+                    If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                        decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt4")
+                    ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                        decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt4")
+                    End If
+
                     If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 And dtabdsCAC.Rows(lngCtr)("chkbnk3") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk2") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                         dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                         decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -1856,6 +1876,13 @@ Public Class frmCAC
                     dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno5")
                     dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt5")
                     decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt5")
+
+                    If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                        decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt5")
+                    ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                        decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt5")
+                    End If
+
                     If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 And dtabdsCAC.Rows(lngCtr)("chkbnk4") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk3") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk2") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                         dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                         decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -1979,6 +2006,11 @@ Public Class frmCAC
         txtExCash.Text = FormatNumber(CType((decGrCshAmt - decGrChgAmt), String), 2)
         txtAmtLeft.Text = FormatNumber(CType((decGrCshAmt - decGrChgAmt), String), 2)
 
+        txtCshISI.Text = FormatNumber(CType(decGrCshAmtISI - decGrChgAmtISI, String), 2)
+        txtCshSBITC.Text = FormatNumber(CType(decGrCshAmtSBITC - decGrChgAmtSBITC, String), 2)
+        txtChkISI.Text = FormatNumber(CType(decAmChequeISI, String), 2)
+        txtChkSBITC.Text = FormatNumber(CType(decAmChequeSBITC, String), 2)
+
     End Sub
 
     Private Sub PopulatedgChequeINV()
@@ -2014,11 +2046,26 @@ Public Class frmCAC
         decGrCshAmt = 0
         decGrChgAmt = 0
 
+        decGrCshAmtISI = 0
+        decGrChgAmtISI = 0
+        decGrCshAmtSBITC = 0
+        decGrChgAmtSBITC = 0
+        decAmChequeISI = 0
+        decAmChequeSBITC = 0
+
         If dtabdsCAC.Rows.Count > 0 Then
             Dim lngCtr As Long = 0
 
             Do While lngCtr < dtabdsCAC.Rows.Count
                 '------- Expected Grand Total (add the cash amount)
+                If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                    decGrCshAmtISI = decGrCshAmtISI + dtabdsCAC.Rows(lngCtr)("CashAMT")
+                    'decGrChgAmtISI = decGrChgAmtISI + dtabdsCAC.Rows(lngCtr)("chgamt")
+                ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                    decGrCshAmtSBITC = decGrCshAmtSBITC + dtabdsCAC.Rows(lngCtr)("CashAMT")
+                    'decGrChgAmtSBITC = decGrChgAmtSBITC + dtabdsCAC.Rows(lngCtr)("chgamt")
+                End If
+
                 decGrCshAmt = decGrCshAmt + dtabdsCAC.Rows(lngCtr)("CashAMT")
                 'decGrChgAmt = decGrChgAmt + dtabdsCAC.Rows(lngCtr)("AvailAMT")
 
@@ -2030,6 +2077,13 @@ Public Class frmCAC
                     dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("CheckNo1")
                     dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("CheckAmt1")
                     decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("CheckAmt1")
+
+                    If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                        decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("CheckAmt1")
+                    ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                        decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("CheckAmt1")
+                    End If
+
                     'If dtabdsCAC.Rows(lngCtr)("CashAMT") = 0 Then
                     '    dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("AvailAMT")
                     '    decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("AvailAMT")
@@ -2047,6 +2101,13 @@ Public Class frmCAC
                     dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("CheckNo2")
                     dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("CheckAmt2")
                     decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("CheckAmt2")
+
+                    If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                        decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("CheckAmt2")
+                    ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                        decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("CheckAmt2")
+                    End If
+
                     'If dtabdsCAC.Rows(lngCtr)("CheckBnk1") = "" And dtabdsCAC.Rows(lngCtr)("CashAMT") = 0 Then
                     '    dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("AvailAMT")
                     '    decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("AvailAMT")
@@ -2168,6 +2229,12 @@ Public Class frmCAC
         txtGrandTot.Text = FormatNumber(CType(((decGrCshAmt + decAmCheque) - decGrChgAmt), String), 2)
         txtExCash.Text = FormatNumber(CType((decGrCshAmt - decGrChgAmt), String), 2)
         txtAmtLeft.Text = FormatNumber(CType((decGrCshAmt - decGrChgAmt), String), 2)
+
+        txtCshISI.Text = FormatNumber(CType(decGrCshAmtISI - decGrChgAmtISI, String), 2)
+        txtCshSBITC.Text = FormatNumber(CType(decGrCshAmtSBITC - decGrChgAmtSBITC, String), 2)
+        txtChkISI.Text = FormatNumber(CType(decAmChequeISI, String), 2)
+        txtChkSBITC.Text = FormatNumber(CType(decAmChequeSBITC, String), 2)
+
     End Sub
 
     Private Sub PopulatedgChequeALL(ByVal strTransType As Object)
@@ -2183,6 +2250,14 @@ Public Class frmCAC
                 decGrandTotal = 0
                 decGrCshAmt = 0
                 decGrChgAmt = 0
+
+                decGrCshAmtISI = 0
+                decGrChgAmtISI = 0
+                decGrCshAmtSBITC = 0
+                decGrChgAmtSBITC = 0
+                decAmChequeISI = 0
+                decAmChequeSBITC = 0
+
 
                 If dtabDetails.Columns.Contains("Bank") = True Then
                     dtabDetails.Columns.Remove("Bank")
@@ -2212,6 +2287,14 @@ Public Class frmCAC
 
                     Do While lngCtr < dtabdsCAC.Rows.Count
                         '------- Expected Grand Total (add the cash amount)
+                        If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                            decGrCshAmtISI = decGrCshAmtISI + dtabdsCAC.Rows(lngCtr)("cshamt")
+                            decGrChgAmtISI = decGrChgAmtISI + dtabdsCAC.Rows(lngCtr)("chgamt")
+                        ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                            decGrCshAmtSBITC = decGrCshAmtSBITC + dtabdsCAC.Rows(lngCtr)("cshamt")
+                            decGrChgAmtSBITC = decGrChgAmtSBITC + dtabdsCAC.Rows(lngCtr)("chgamt")
+                        End If
+
                         decGrCshAmt = decGrCshAmt + dtabdsCAC.Rows(lngCtr)("cshamt")
                         decGrChgAmt = decGrChgAmt + dtabdsCAC.Rows(lngCtr)("chgamt")
 
@@ -2223,6 +2306,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno1")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt1")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt1")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt1")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt1")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2239,6 +2329,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno2")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt2")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt2")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt2")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt2")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2255,6 +2352,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno3")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt3")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt3")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt3")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt3")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 And dtabdsCAC.Rows(lngCtr)("chkbnk2") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2271,6 +2375,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno4")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt4")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt4")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt4")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt4")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 And dtabdsCAC.Rows(lngCtr)("chkbnk3") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk2") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2287,6 +2398,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno5")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt5")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt5")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt5")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt5")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 And dtabdsCAC.Rows(lngCtr)("chkbnk4") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk3") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk2") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2313,6 +2431,13 @@ Public Class frmCAC
 
                     Do While lngCtr < dtabdsCAC.Rows.Count
                         '------- Expected Grand Total (add the cash amount)
+                        If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                            decGrCshAmtISI = decGrCshAmtISI + dtabdsCAC.Rows(lngCtr)("cshamt")
+                            decGrChgAmtISI = decGrChgAmtISI + dtabdsCAC.Rows(lngCtr)("chgamt")
+                        ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                            decGrCshAmtSBITC = decGrCshAmtSBITC + dtabdsCAC.Rows(lngCtr)("cshamt")
+                            decGrChgAmtSBITC = decGrChgAmtSBITC + dtabdsCAC.Rows(lngCtr)("chgamt")
+                        End If
                         decGrCshAmt = decGrCshAmt + dtabdsCAC.Rows(lngCtr)("cshamt")
                         decGrChgAmt = decGrChgAmt + dtabdsCAC.Rows(lngCtr)("chgamt")
 
@@ -2324,6 +2449,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno1")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt1")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt1")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt1")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt1")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2340,6 +2472,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno2")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt2")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt2")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt2")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt2")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2356,6 +2495,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno3")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt3")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt3")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt3")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt3")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 And dtabdsCAC.Rows(lngCtr)("chkbnk2") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2372,6 +2518,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno4")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt4")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt4")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt4")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt4")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 And dtabdsCAC.Rows(lngCtr)("chkbnk3") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk2") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2388,6 +2541,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno5")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt5")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt5")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt5")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt5")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 And dtabdsCAC.Rows(lngCtr)("chkbnk4") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk3") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk2") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2415,6 +2575,14 @@ Public Class frmCAC
 
                     Do While lngCtr < dtabdsCAC.Rows.Count
                         '------- Expected Grand Total (add the cash amount)
+                        If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                            decGrCshAmtISI = decGrCshAmtISI + dtabdsCAC.Rows(lngCtr)("cshamt")
+                            decGrChgAmtISI = decGrChgAmtISI + dtabdsCAC.Rows(lngCtr)("chgamt")
+                        ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                            decGrCshAmtSBITC = decGrCshAmtSBITC + dtabdsCAC.Rows(lngCtr)("cshamt")
+                            decGrChgAmtSBITC = decGrChgAmtSBITC + dtabdsCAC.Rows(lngCtr)("chgamt")
+                        End If
+
                         decGrCshAmt = decGrCshAmt + dtabdsCAC.Rows(lngCtr)("cshamt")
                         decGrChgAmt = decGrChgAmt + dtabdsCAC.Rows(lngCtr)("chgamt")
 
@@ -2426,6 +2594,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno1")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt1")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt1")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt1")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt1")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2442,6 +2617,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno2")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt2")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt2")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt2")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt2")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2458,6 +2640,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno3")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt3")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt3")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt3")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt3")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 And dtabdsCAC.Rows(lngCtr)("chkbnk2") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2474,6 +2663,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno4")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt4")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt4")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt4")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt4")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 And dtabdsCAC.Rows(lngCtr)("chkbnk3") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk2") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2490,6 +2686,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("chkno5")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("chkamt5")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("chkamt5")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("chkamt5")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("chkamt5")
+                            End If
+
                             If dtabdsCAC.Rows(lngCtr)("cshamt") = 0 And dtabdsCAC.Rows(lngCtr)("chkbnk4") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk3") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk2") = "" And dtabdsCAC.Rows(lngCtr)("chkbnk1") = "" Then
                                 dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("chgamt")
                                 decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("chgamt")
@@ -2516,6 +2719,13 @@ Public Class frmCAC
 
                     Do While lngCtr < dtabdsCAC.Rows.Count
                         '------- Expected Grand Total (add the cash amount)
+                        If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                            decGrCshAmtISI = decGrCshAmtISI + dtabdsCAC.Rows(lngCtr)("CashAMT")
+                            'decGrChgAmtISI = decGrChgAmtISI + dtabdsCAC.Rows(lngCtr)("chgamt")
+                        ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                            decGrCshAmtSBITC = decGrCshAmtSBITC + dtabdsCAC.Rows(lngCtr)("CashAMT")
+                            'decGrChgAmtSBITC = decGrChgAmtSBITC + dtabdsCAC.Rows(lngCtr)("chgamt")
+                        End If
                         decGrCshAmt = decGrCshAmt + dtabdsCAC.Rows(lngCtr)("CashAMT")
                         'decGrChgAmt = decGrChgAmt + dtabdsCAC.Rows(lngCtr)("AvailAMT")
 
@@ -2527,6 +2737,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("CheckNo1")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("CheckAmt1")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("CheckAmt1")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("CheckAmt1")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("CheckAmt1")
+                            End If
+
                             'If dtabdsCAC.Rows(lngCtr)("CashAMT") = 0 Then
                             '    dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("AvailAMT")
                             '    decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("AvailAMT")
@@ -2544,6 +2761,13 @@ Public Class frmCAC
                             dtarow("Cheque No.") = dtabdsCAC.Rows(lngCtr)("CheckNo2")
                             dtarow("Amount") = dtabdsCAC.Rows(lngCtr)("CheckAmt2")
                             decAmCheque = decAmCheque + dtabdsCAC.Rows(lngCtr)("CheckAmt2")
+
+                            If Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "ISI" Then
+                                decAmChequeISI = decAmChequeISI + dtabdsCAC.Rows(lngCtr)("CheckAmt2")
+                            ElseIf Trim(dtabdsCAC.Rows(lngCtr)("CompanyCode")) = "SBITC" Then
+                                decAmChequeSBITC = decAmChequeSBITC + dtabdsCAC.Rows(lngCtr)("CheckAmt2")
+                            End If
+
                             'If dtabdsCAC.Rows(lngCtr)("CheckBnk1") = "" And dtabdsCAC.Rows(lngCtr)("CashAMT") = 0 Then
                             '    dtarow("Excess") = dtabdsCAC.Rows(lngCtr)("AvailAMT")
                             '    decExCheque = decExCheque + dtabdsCAC.Rows(lngCtr)("AvailAMT")
@@ -2587,6 +2811,13 @@ Public Class frmCAC
         txtGrandTot.Text = FormatNumber(CType(((decGrCshAmt + decAmCheque) - decGrChgAmt), String), 2)
         txtExCash.Text = FormatNumber(CType((decGrCshAmt - decGrChgAmt), String), 2)
         txtAmtLeft.Text = FormatNumber(CType((decGrCshAmt - decGrChgAmt), String), 2)
+
+        txtCshISI.Text = FormatNumber(CType(decGrCshAmtISI - decGrChgAmtISI, String), 2)
+        txtCshSBITC.Text = FormatNumber(CType(decGrCshAmtSBITC - decGrChgAmtSBITC, String), 2)
+        txtChkISI.Text = FormatNumber(CType(decAmChequeISI, String), 2)
+        txtChkSBITC.Text = FormatNumber(CType(decAmChequeSBITC, String), 2)
+
+
 
     End Sub
 
@@ -2679,9 +2910,6 @@ Public Class frmCAC
         txtTellerID.Text = zCurrentUser()
         txtTellerID.ReadOnly = False
         txtTellerID.BackColor = Color.White
-        txtComp.SelectedItem = "ALL"
-        txtComp.Enabled = True
-        txtComp.BackColor = Color.White
         dtePeriod.Text = Today()
         dtePeriod.Enabled = True
         dtePeriod.BackColor = Color.White
@@ -2700,6 +2928,12 @@ Public Class frmCAC
         '--- gbCash ---
         decGrCshAmt = 0
         decGrChgAmt = 0
+
+        decGrCshAmtISI = 0
+        decGrChgAmtISI = 0
+        decGrCshAmtSBITC = 0
+        decGrChgAmtSBITC = 0
+
         txt1000.Text = "0"
         txt500.Text = "0"
         txt200.Text = "0"
@@ -2729,11 +2963,19 @@ Public Class frmCAC
         txtTotCash.Text = "0.00"
         txtAmtLeft.Text = "0.00"
         txtExCash.Text = "0.00"
+
+        txtCshISI.Text = "0.00"
+        txtCshSBITC.Text = "0.00"
+
         '--- gbCheque ---
         dgChequeDetails.DataSource = Nothing
         dgChequeStat.DataSource = Nothing
         txtTotCheque.Text = "0.00"
         txtExcessCheque.Text = "0.00"
+
+        txtChkISI.Text = "0.00"
+        txtChkSBITC.Text = "0.00"
+
         '--- gbControl ---
         txtGrandTot.Text = "0.00"
         txtRemarks.Text = ""
@@ -2802,8 +3044,6 @@ Public Class frmCAC
         cmbTransType.BackColor = Color.AliceBlue
         txtTellerID.ReadOnly = True
         txtTellerID.BackColor = Color.AliceBlue
-        txtComp.Enabled = False
-        txtComp.BackColor = Color.AliceBlue
         dtePeriod.Enabled = False
         dtePeriod.BackColor = Color.AliceBlue
         txtTimeFrom.ReadOnly = True
@@ -3053,27 +3293,24 @@ Public Class frmCAC
         RptCAC.SetParameterValue("strRemarks", Trim(txtRemarks.Text))
         RptCAC.SetParameterValue("strUserID", UCase(Trim(txtTellerID.Text)))
         RptCAC.SetParameterValue("numGrandTot", Trim(txtGrandTot.Text))
+        RptCAC.SetParameterValue("numCshISI", Trim(txtCshISI.Text))
+        RptCAC.SetParameterValue("numCshSBITC", Trim(txtCshSBITC.Text))
+        RptCAC.SetParameterValue("numChkISI", Trim(txtChkISI.Text))
+        RptCAC.SetParameterValue("numChkSBITC", Trim(txtChkSBITC.Text))
+
+
 
         frmRptCAC.crvReports.ReportSource = RptCAC
         Cursor = Cursors.Default
         frmRptCAC.ShowDialog()
         Cursor = Cursors.Default
     End Sub
-
-    Private Sub txtComp_KeyDown(sender As Object, e As KeyEventArgs) Handles txtComp.KeyDown
-        If e.KeyCode = 13 Or e.KeyCode = 9 Then
-            ValDis = CallClsCAC.StrVal(txtComp.Text)
-            If ValDis = False Then
-                MsgBox("Invalid Teller ID", MsgBoxStyle.Critical)
-                txtComp.Focus()
-            Else
-                dtePeriod.Focus()
-            End If
-        End If
-    End Sub
-
     Private Sub frmCAC_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         frmSplash.Close()
+    End Sub
+
+    Private Sub txtTellerID_TextChanged(sender As Object, e As EventArgs) Handles txtTellerID.TextChanged
+
     End Sub
 
 

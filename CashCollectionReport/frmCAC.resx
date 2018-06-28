@@ -117,74 +117,208 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txtComp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
+  <data name="&gt;&gt;lstTimeRange.Name" xml:space="preserve">
+    <value>lstTimeRange</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtComp.ItemHeight" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="&gt;&gt;lstTimeRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txtComp.Items" xml:space="preserve">
-    <value>ALL</value>
-  </data>
-  <data name="txtComp.Items1" xml:space="preserve">
-    <value>ISI</value>
-  </data>
-  <data name="txtComp.Items2" xml:space="preserve">
-    <value>SBITC</value>
-  </data>
-  <data name="txtComp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 46</value>
-  </data>
-  <data name="txtComp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 26</value>
-  </data>
-  <data name="txtComp.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;txtComp.Name" xml:space="preserve">
-    <value>txtComp</value>
-  </data>
-  <data name="&gt;&gt;txtComp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtComp.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lstTimeRange.Parent" xml:space="preserve">
     <value>gbCriteria</value>
   </data>
-  <data name="&gt;&gt;txtComp.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lstTimeRange.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="Label12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  <data name="&gt;&gt;lblBatch.Name" xml:space="preserve">
+    <value>lblBatch</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 52</value>
-  </data>
-  <data name="Label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 20</value>
-  </data>
-  <data name="Label12.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="Label12.Text" xml:space="preserve">
-    <value>COMPANY:</value>
-  </data>
-  <data name="&gt;&gt;Label12.Name" xml:space="preserve">
-    <value>Label12</value>
-  </data>
-  <data name="&gt;&gt;Label12.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblBatch.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Label12.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblBatch.Parent" xml:space="preserve">
     <value>gbCriteria</value>
   </data>
-  <data name="&gt;&gt;Label12.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblBatch.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;Label19.Name" xml:space="preserve">
+    <value>Label19</value>
+  </data>
+  <data name="&gt;&gt;Label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label19.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;Label19.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Label18.Name" xml:space="preserve">
+    <value>Label18</value>
+  </data>
+  <data name="&gt;&gt;Label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label18.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;Label18.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmbTransType.Name" xml:space="preserve">
+    <value>cmbTransType</value>
+  </data>
+  <data name="&gt;&gt;cmbTransType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbTransType.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;cmbTransType.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtTellerID.Name" xml:space="preserve">
+    <value>txtTellerID</value>
+  </data>
+  <data name="&gt;&gt;txtTellerID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTellerID.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;txtTellerID.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtTimeTo.Name" xml:space="preserve">
+    <value>txtTimeTo</value>
+  </data>
+  <data name="&gt;&gt;txtTimeTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTimeTo.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;txtTimeTo.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtTimeFrom.Name" xml:space="preserve">
+    <value>txtTimeFrom</value>
+  </data>
+  <data name="&gt;&gt;txtTimeFrom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTimeFrom.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;txtTimeFrom.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lblTimeTo.Name" xml:space="preserve">
+    <value>lblTimeTo</value>
+  </data>
+  <data name="&gt;&gt;lblTimeTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTimeTo.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;lblTimeTo.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lblTimeFrom.Name" xml:space="preserve">
+    <value>lblTimeFrom</value>
+  </data>
+  <data name="&gt;&gt;lblTimeFrom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTimeFrom.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;lblTimeFrom.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Label15.Name" xml:space="preserve">
+    <value>Label15</value>
+  </data>
+  <data name="&gt;&gt;Label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label15.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;Label15.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;dtePeriod.Name" xml:space="preserve">
+    <value>dtePeriod</value>
+  </data>
+  <data name="&gt;&gt;dtePeriod.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtePeriod.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;dtePeriod.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Label14.Name" xml:space="preserve">
+    <value>Label14</value>
+  </data>
+  <data name="&gt;&gt;Label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label14.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;Label14.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;Label13.Name" xml:space="preserve">
+    <value>Label13</value>
+  </data>
+  <data name="&gt;&gt;Label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label13.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;Label13.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lblTimeRange.Name" xml:space="preserve">
+    <value>lblTimeRange</value>
+  </data>
+  <data name="&gt;&gt;lblTimeRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTimeRange.Parent" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;lblTimeRange.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gbCriteria.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 98</value>
+  </data>
+  <data name="gbCriteria.Size" type="System.Drawing.Size, System.Drawing">
+    <value>905, 80</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gbCriteria.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gbCriteria.Name" xml:space="preserve">
+    <value>gbCriteria</value>
+  </data>
+  <data name="&gt;&gt;gbCriteria.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbCriteria.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbCriteria.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="lstTimeRange.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
@@ -214,11 +348,12 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;lstTimeRange.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="lblBatch.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblBatch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -241,7 +376,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;lblBatch.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="Label19.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -271,7 +406,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;Label19.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="Label18.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -301,7 +436,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;Label18.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="cmbTransType.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
@@ -343,7 +478,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;cmbTransType.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="txtTellerID.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
@@ -352,7 +487,7 @@
     <value>120, 48</value>
   </data>
   <data name="txtTellerID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 24</value>
+    <value>264, 24</value>
   </data>
   <data name="txtTellerID.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -367,7 +502,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;txtTellerID.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="txtTimeTo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
@@ -391,7 +526,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;txtTimeTo.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="txtTimeFrom.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
@@ -415,7 +550,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;txtTimeFrom.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="lblTimeTo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -445,7 +580,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;lblTimeTo.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="lblTimeFrom.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -475,7 +610,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;lblTimeFrom.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="Label15.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -505,7 +640,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;Label15.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <data name="dtePeriod.CalendarFont" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 9pt</value>
@@ -535,7 +670,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;dtePeriod.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>11</value>
   </data>
   <data name="Label14.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -565,7 +700,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;Label14.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>12</value>
   </data>
   <data name="Label13.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -595,7 +730,7 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;Label13.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>13</value>
   </data>
   <data name="lblTimeRange.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -628,51 +763,30 @@
     <value>gbCriteria</value>
   </data>
   <data name="&gt;&gt;lblTimeRange.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>14</value>
   </data>
-  <data name="gbCriteria.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 98</value>
-  </data>
-  <data name="gbCriteria.Size" type="System.Drawing.Size, System.Drawing">
-    <value>905, 80</value>
-  </data>
-  <data name="gbCriteria.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gbCriteria.Name" xml:space="preserve">
-    <value>gbCriteria</value>
-  </data>
-  <data name="&gt;&gt;gbCriteria.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbCriteria.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gbCriteria.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="TextBox2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtCshISI.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt, style=Bold</value>
   </data>
-  <data name="TextBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtCshISI.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 19</value>
   </data>
-  <data name="TextBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtCshISI.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 24</value>
   </data>
-  <data name="TextBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtCshISI.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;TextBox2.Name" xml:space="preserve">
-    <value>TextBox2</value>
+  <data name="&gt;&gt;txtCshISI.Name" xml:space="preserve">
+    <value>txtCshISI</value>
   </data>
-  <data name="&gt;&gt;TextBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtCshISI.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtCshISI.Parent" xml:space="preserve">
     <value>GroupBox2</value>
   </data>
-  <data name="&gt;&gt;TextBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtCshISI.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="GroupBox2.Font" type="System.Drawing.Font, System.Drawing">
@@ -702,28 +816,28 @@
   <data name="&gt;&gt;GroupBox2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="TextBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtCshSBITC.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt, style=Bold</value>
   </data>
-  <data name="TextBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtCshSBITC.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 19</value>
   </data>
-  <data name="TextBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtCshSBITC.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 24</value>
   </data>
-  <data name="TextBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtCshSBITC.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;TextBox1.Name" xml:space="preserve">
-    <value>TextBox1</value>
+  <data name="&gt;&gt;txtCshSBITC.Name" xml:space="preserve">
+    <value>txtCshSBITC</value>
   </data>
-  <data name="&gt;&gt;TextBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtCshSBITC.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtCshSBITC.Parent" xml:space="preserve">
     <value>GroupBox1</value>
   </data>
-  <data name="&gt;&gt;TextBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtCshSBITC.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="GroupBox1.Font" type="System.Drawing.Font, System.Drawing">
@@ -2295,28 +2409,28 @@
   <data name="&gt;&gt;gbCash.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="TextBox4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtChkISI.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt, style=Bold</value>
   </data>
-  <data name="TextBox4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtChkISI.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 19</value>
   </data>
-  <data name="TextBox4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtChkISI.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 24</value>
   </data>
-  <data name="TextBox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtChkISI.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;TextBox4.Name" xml:space="preserve">
-    <value>TextBox4</value>
+  <data name="&gt;&gt;txtChkISI.Name" xml:space="preserve">
+    <value>txtChkISI</value>
   </data>
-  <data name="&gt;&gt;TextBox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtChkISI.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBox4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtChkISI.Parent" xml:space="preserve">
     <value>GroupBox3</value>
   </data>
-  <data name="&gt;&gt;TextBox4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtChkISI.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="GroupBox3.Font" type="System.Drawing.Font, System.Drawing">
@@ -2346,28 +2460,28 @@
   <data name="&gt;&gt;GroupBox3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="TextBox3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtChkSBITC.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt, style=Bold</value>
   </data>
-  <data name="TextBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtChkSBITC.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 19</value>
   </data>
-  <data name="TextBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtChkSBITC.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 24</value>
   </data>
-  <data name="TextBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtChkSBITC.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;TextBox3.Name" xml:space="preserve">
-    <value>TextBox3</value>
+  <data name="&gt;&gt;txtChkSBITC.Name" xml:space="preserve">
+    <value>txtChkSBITC</value>
   </data>
-  <data name="&gt;&gt;TextBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtChkSBITC.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtChkSBITC.Parent" xml:space="preserve">
     <value>GroupBox4</value>
   </data>
-  <data name="&gt;&gt;TextBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtChkSBITC.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="GroupBox4.Font" type="System.Drawing.Font, System.Drawing">
@@ -2678,6 +2792,123 @@
   </data>
   <data name="&gt;&gt;gbCheque.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;Label36.Name" xml:space="preserve">
+    <value>Label36</value>
+  </data>
+  <data name="&gt;&gt;Label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label36.Parent" xml:space="preserve">
+    <value>gbControl</value>
+  </data>
+  <data name="&gt;&gt;Label36.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtGrandTot.Name" xml:space="preserve">
+    <value>txtGrandTot</value>
+  </data>
+  <data name="&gt;&gt;txtGrandTot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtGrandTot.Parent" xml:space="preserve">
+    <value>gbControl</value>
+  </data>
+  <data name="&gt;&gt;txtGrandTot.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Label11.Name" xml:space="preserve">
+    <value>Label11</value>
+  </data>
+  <data name="&gt;&gt;Label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label11.Parent" xml:space="preserve">
+    <value>gbControl</value>
+  </data>
+  <data name="&gt;&gt;Label11.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtRemarks.Name" xml:space="preserve">
+    <value>txtRemarks</value>
+  </data>
+  <data name="&gt;&gt;txtRemarks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtRemarks.Parent" xml:space="preserve">
+    <value>gbControl</value>
+  </data>
+  <data name="&gt;&gt;txtRemarks.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnNew.Name" xml:space="preserve">
+    <value>btnNew</value>
+  </data>
+  <data name="&gt;&gt;btnNew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNew.Parent" xml:space="preserve">
+    <value>gbControl</value>
+  </data>
+  <data name="&gt;&gt;btnNew.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>gbControl</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Name" xml:space="preserve">
+    <value>btnPrint</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Parent" xml:space="preserve">
+    <value>gbControl</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnCLOSE.Name" xml:space="preserve">
+    <value>btnCLOSE</value>
+  </data>
+  <data name="&gt;&gt;btnCLOSE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCLOSE.Parent" xml:space="preserve">
+    <value>gbControl</value>
+  </data>
+  <data name="&gt;&gt;btnCLOSE.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="gbControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 745</value>
+  </data>
+  <data name="gbControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>905, 95</value>
+  </data>
+  <data name="gbControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gbControl.Name" xml:space="preserve">
+    <value>gbControl</value>
+  </data>
+  <data name="&gt;&gt;gbControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbControl.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="Label36.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -3079,32 +3310,29 @@
   <data name="&gt;&gt;btnCLOSE.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="gbControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 745</value>
-  </data>
-  <data name="gbControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>905, 95</value>
-  </data>
-  <data name="gbControl.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gbControl.Name" xml:space="preserve">
-    <value>gbControl</value>
-  </data>
-  <data name="&gt;&gt;gbControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbControl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gbControl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="statCACBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="statCACBar.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 846</value>
+  </data>
+  <data name="statCACBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>921, 22</value>
+  </data>
+  <data name="statCACBar.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;statCACBar.Name" xml:space="preserve">
+    <value>statCACBar</value>
+  </data>
+  <data name="&gt;&gt;statCACBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statCACBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statCACBar.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="statPanelUser.Name" xml:space="preserve">
     <value>statPanelUser</value>
@@ -3129,24 +3357,6 @@
   </data>
   <data name="statPanelTime.Width" type="System.Int32, mscorlib">
     <value>120</value>
-  </data>
-  <data name="statCACBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>921, 22</value>
-  </data>
-  <data name="statCACBar.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;statCACBar.Name" xml:space="preserve">
-    <value>statCACBar</value>
-  </data>
-  <data name="&gt;&gt;statCACBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statCACBar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;statCACBar.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="lblID.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -3177,6 +3387,51 @@
   </data>
   <data name="&gt;&gt;lblID.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;Label7.Name" xml:space="preserve">
+    <value>Label7</value>
+  </data>
+  <data name="&gt;&gt;Label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label7.Parent" xml:space="preserve">
+    <value>gbHeader</value>
+  </data>
+  <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
+    <value>PictureBox1</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
+    <value>gbHeader</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 3</value>
+  </data>
+  <data name="gbHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>905, 95</value>
+  </data>
+  <data name="gbHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;gbHeader.Name" xml:space="preserve">
+    <value>gbHeader</value>
+  </data>
+  <data name="&gt;&gt;gbHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbHeader.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbHeader.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="Label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 21.75pt, style=Bold</value>
@@ -3653,27 +3908,6 @@
   </data>
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="gbHeader.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 3</value>
-  </data>
-  <data name="gbHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>905, 95</value>
-  </data>
-  <data name="gbHeader.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;gbHeader.Name" xml:space="preserve">
-    <value>gbHeader</value>
-  </data>
-  <data name="&gt;&gt;gbHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbHeader.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gbHeader.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

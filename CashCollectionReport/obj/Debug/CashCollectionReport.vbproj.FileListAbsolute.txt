@@ -40,3 +40,4 @@ C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collectio
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Debug\CashCollectionReport.exe
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Debug\CashCollectionReport.xml
 C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Debug\CashCollectionReport.pdb
+C:\Users\JPasol\Desktop\Repository\August Save\Billing\Cash-and-Cheque-Collection-Report\CashCollectionReport\obj\Debug\CashCollectionReport.vbprojAssemblyReference.cache
