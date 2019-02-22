@@ -4,7 +4,7 @@
   <description asmv2:iconFile="paper2.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="CashCollectionReport" version="1.0.6827.17879" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="CashCollectionReport" version="1.0.6968.28317" language="neutral" processorArchitecture="x86" />
     <commandLine file="CashCollectionReport.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,31 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="log4net" version="1.2.10.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="x86" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CashCollectionReport.exe" size="606088">
-      <assemblyIdentity name="CashCollectionReport" version="1.0.6827.17879" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="CashCollectionReport" version="1.0.6968.28317" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>PEKkGkWeUNOVOUC+7wZKXqPNJBY=</dsig:DigestValue>
+        <dsig:DigestValue>5kvp6U64aT3XprOpbTAPjp5sDDQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="af\CashCollectionReport.resources.dll" size="9216">
-      <assemblyIdentity name="CashCollectionReport.resources" version="1.0.6827.17879" language="af" processorArchitecture="x86" />
+      <assemblyIdentity name="CashCollectionReport.resources" version="1.0.6968.28317" language="af" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6IhsnfeJdRyct9AY8HHUWWWuvJs=</dsig:DigestValue>
+        <dsig:DigestValue>GcCaWt/QarZpVMHMW2W09QvJbkM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
